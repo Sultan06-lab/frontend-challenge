@@ -1,0 +1,28 @@
+.header {
+  background: #2196f3;
+
+  @media (max-width: 600px) {
+    padding: 0px;
+  }
+
+  padding: 0px 62px;
+  &-tabs {
+    display: flex;
+
+    &__tab {
+      @media (max-width: 600px) {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        padding: 23px 20px;
+      }
+      cursor: pointer;
+      white-space: nowrap;
+      padding: 23px 60px;
+      color: white;
+      &_active {
+        background: #1e88e5;
+      }
+    }
+  }
+}
